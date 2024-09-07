@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling with image background */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('ed.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the whole viewport */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Adding animation */
+}
+
+/* Container styling with light transparency */
+.container {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.4); /* White background with 80% opacity */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    animation: slideIn 1.5s ease-in-out; /* Adding animation */
+}
+
+/* Label styling */
+label {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Input and textarea styling */
+textarea, input {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    resize: none;
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #35302d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Adding hover effect */
+}
+
+button:hover {
+    background-color: #4a453f;
+}
+
+/* Subtitle styling */
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    animation: fadeIn 2s ease-in-out; /* Adding animation */
+}
+
+/* Result styling */
+#result {
+    font-size: 13px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    animation: fadeIn 2.5s ease-in-out; /* Adding animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
